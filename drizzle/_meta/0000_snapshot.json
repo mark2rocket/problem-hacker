@@ -1,0 +1,189 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "sessions": {
+      "name": "sessions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "typeSchema": "",
+          "constraints": [
+            "primaryKey"
+          ],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": true,
+          "default": "gen_random_uuid()",
+          "defaultType": "expression",
+          "onUpdate": null,
+          "isNullable": false,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": true,
+          "default": "now()",
+          "defaultType": "expression",
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": true,
+          "default": "now()",
+          "defaultType": "expression",
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "structured_data": {
+          "name": "structured_data",
+          "type": "jsonb",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": false,
+          "default": null,
+          "defaultType": null,
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        }
+      },
+      "indexes": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "messages": {
+      "name": "messages",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "typeSchema": "",
+          "constraints": [
+            "primaryKey"
+          ],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": true,
+          "default": "gen_random_uuid()",
+          "defaultType": "expression",
+          "onUpdate": null,
+          "isNullable": false,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "session_id": {
+          "name": "session_id",
+          "type": "uuid",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": false,
+          "default": null,
+          "defaultType": null,
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "role": {
+          "name": "role",
+          "type": "text",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": false,
+          "default": null,
+          "defaultType": null,
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "content": {
+          "name": "content",
+          "type": "text",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": false,
+          "default": null,
+          "defaultType": null,
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "typeSchema": "",
+          "constraints": [],
+          "isArray": false,
+          "arrayDimensions": null,
+          "isAutoincrement": false,
+          "hasDefault": true,
+          "default": "now()",
+          "defaultType": "expression",
+          "onUpdate": null,
+          "isNullable": true,
+          "precision": null,
+          "scale": null,
+          "isUnique": false
+        }
+      },
+      "indexes": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
