@@ -56,7 +56,7 @@ curl https://problem-hacker-production.up.railway.app/api/health
 
 ### Environment Variables (Set)
 ```
-✅ GOOGLE_GENERATIVE_AI_API_KEY = AIzaSyAhKVsivUKfVlVDeIrGV-IZlcD6xtk6vNY
+✅ GOOGLE_GENERATIVE_AI_API_KEY = YOUR_GOOGLE_API_KEY_HERE
 ✅ DATABASE_URL = ${{Postgres.DATABASE_URL}} (reference)
 ```
 

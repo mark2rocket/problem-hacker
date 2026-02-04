@@ -80,7 +80,7 @@ cat .env
 
 Should contain:
 ```
-GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyAhKVsivUKfVlVDeIrGV-IZlcD6xtk6vNY
+GOOGLE_GENERATIVE_AI_API_KEY=YOUR_GOOGLE_API_KEY_HERE
 DATABASE_URL=postgresql://localhost:5432/problem_hacker
 ```
 
@@ -120,7 +120,7 @@ In Railway dashboard (https://railway.com/project/ae9357fd-3c51-434b-bd00-b0d42e
 
 2. **Set Environment Variables:**
    ```
-   GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyAhKVsivUKfVlVDeIrGV-IZlcD6xtk6vNY
+   GOOGLE_GENERATIVE_AI_API_KEY=YOUR_GOOGLE_API_KEY_HERE
    ```
 
 3. **Link Database:**
@@ -241,7 +241,7 @@ open https://railway.com/project/ae9357fd-3c51-434b-bd00-b0d42eb47ffd
 
 # Option 2: Via CLI
 railway service
-railway variables set GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyAhKVsivUKfVlVDeIrGV-IZlcD6xtk6vNY
+railway variables set GOOGLE_GENERATIVE_AI_API_KEY=YOUR_GOOGLE_API_KEY_HERE
 railway up
 ```
 
