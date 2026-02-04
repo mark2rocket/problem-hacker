@@ -1,4 +1,4 @@
-import { openai } from '@ai-sdk/openai';
+import { google } from '@ai-sdk/google';
 import { streamText, StreamData, generateObject } from 'ai';
 import { SYSTEM_PROMPT, EXTRACTION_PROMPT } from '@/lib/ai/prompts';
 import { extractedDataSchema } from '@/lib/ai/schema';
@@ -17,14 +17,14 @@ export async function POST(req: Request) {
 
     // Stream the conversational response
     const result = await streamText({
-      model: openai('gpt-4o'),
+      model: google('gemini-1.5-pro-latest') as any,
       system: SYSTEM_PROMPT,
       messages,
       onFinish: async ({ text }) => {
         try {
           // After text generation completes, extract structured data
           const extractionResult = await generateObject({
-            model: openai('gpt-4o'),
+            model: google('gemini-1.5-pro-latest') as any,
             schema: extractedDataSchema,
             prompt: EXTRACTION_PROMPT + '\n\nConversation:\n' +
               messages.map((m: { role: string; content: string }) => `${m.role}: ${m.content}`).join('\n') +

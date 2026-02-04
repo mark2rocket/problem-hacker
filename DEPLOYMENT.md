@@ -25,7 +25,7 @@ URL: https://railway.com/project/ae9357fd-3c51-434b-bd00-b0d42eb47ffd
 
 #### 필수 환경 변수:
 ```
-OPENAI_API_KEY=<your-openai-api-key>
+GOOGLE_GENERATIVE_AI_API_KEY=<your-google-api-key>
 ```
 
 #### DATABASE_URL (자동 설정)
@@ -96,7 +96,7 @@ https://<your-domain>/api/health
 
 | 변수명 | 설명 | 예시 |
 |--------|------|------|
-| `OPENAI_API_KEY` | OpenAI API 키 (필수) | `sk-...` |
+| `GOOGLE_GENERATIVE_AI_API_KEY` | OpenAI API 키 (필수) | `sk-...` |
 | `DATABASE_URL` | PostgreSQL 연결 문자열 | `postgresql://...` |
 | `NODE_ENV` | 환경 설정 (자동) | `production` |
 
@@ -133,7 +133,7 @@ https://<your-domain>/api/health
 railway service problem-hacker
 
 # 환경 변수 설정
-railway variables set OPENAI_API_KEY=<your-key>
+railway variables set GOOGLE_GENERATIVE_AI_API_KEY=<your-key>
 
 # GitHub 저장소에서 배포
 railway up --detach
@@ -149,7 +149,7 @@ railway domain
 
 - [ ] Next.js 서비스 생성됨
 - [ ] GitHub 저장소 연동됨
-- [ ] 환경 변수 설정됨 (OPENAI_API_KEY, DATABASE_URL)
+- [ ] 환경 변수 설정됨 (GOOGLE_GENERATIVE_AI_API_KEY, DATABASE_URL)
 - [ ] 빌드 성공
 - [ ] 헬스체크 통과
 - [ ] 도메인 생성됨

@@ -1,8 +1,11 @@
 {
-  "active": true,
+  "active": false,
   "started_at": "2026-02-03T16:23:30.262Z",
+  "completed_at": "2026-02-04T08:45:00.000Z",
   "original_prompt": "ralph 이전에 plan 구현한대로 진행해줘",
   "reinforcement_count": 0,
-  "last_checked_at": "2026-02-03T16:23:30.263Z",
-  "iteration": 17
+  "last_checked_at": "2026-02-04T08:45:00.000Z",
+  "iteration": 17,
+  "completion_verified": true,
+  "architect_approved": true
 }

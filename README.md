@@ -62,7 +62,7 @@ The AI acts as a cynical VC and senior PM, relentlessly questioning your idea ac
 
 - **Frontend:** Next.js 14 (App Router), React 18, Tailwind CSS
 - **UI Components:** Shadcn UI (Radix UI primitives)
-- **AI Engine:** Vercel AI SDK with OpenAI GPT-4o
+- **AI Engine:** Vercel AI SDK with Google Gemini 1.5 Pro
 - **Database:** PostgreSQL + Drizzle ORM
 - **Testing:** Vitest (26 comprehensive tests)
 - **Deployment:** Railway
@@ -72,7 +72,7 @@ The AI acts as a cynical VC and senior PM, relentlessly questioning your idea ac
 ### Prerequisites
 - Node.js 18+
 - PostgreSQL database
-- OpenAI API key
+- Google Gemini API key
 
 ### Setup
 
@@ -94,7 +94,7 @@ cp .env.example .env
 
 Edit `.env` and add:
 ```
-OPENAI_API_KEY=your_openai_api_key
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_gemini_api_key
 DATABASE_URL=your_postgresql_connection_string
 ```
 
